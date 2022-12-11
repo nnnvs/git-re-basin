@@ -9,6 +9,8 @@ from flax.core import freeze, unfreeze
 from jax import random, tree_map
 from jax.tree_util import tree_reduce
 
+
+from jax import random, tree_map
 rngmix = lambda rng, x: random.fold_in(rng, hash(x))
 
 @contextmanager
